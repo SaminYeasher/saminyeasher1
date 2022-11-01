@@ -17,6 +17,11 @@
     color: transparent;
 
 }
+.navebar-container{
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
 
 .banner-column {
     background-color: rgba(248, 248, 248, 0.616);
@@ -39,11 +44,16 @@
 .text {
     color: rgb(255, 255, 255);
 }
-.row .row .row {
+/* .row .row .row {
     height: 100vh;
-    display: flex;
+    display: inline-block;
     border-radius: 50%;
 
+} */
+.row-education{
+
+    display: inline-block;
+    border-radius: 50%;
 }
 
 .card{
@@ -52,3 +62,53 @@
 .project-container{
     background-color: rgba(238, 113, 18, 0.851);
 }
+.image-resize{
+    width: 100%;
+    height: 60%;
+ 
+}
+.portfolio-container{
+    background-color: rgba(88, 114, 180, 0.937);
+}
+#card-portfolio{
+    background-color: transparent;
+    border-color: white;
+}
+.contact-container{
+    background-color: rgba(12, 128, 35, 0.856);
+}
+.inner-form{
+    background-color: skyblue;
+}
+.button1{
+    background-color: rgba(255, 0, 0, 0.716);
+    transition-duration: 0.4s;
+}
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(255, 250, 250, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgb(31, 205, 196);
+    color: black;
+  }
+.footer-container{
+    background-color: bisque;
+  }
+  .square{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background-color: transparent;
+    text-align: center;
+    font-size: 40px;
+  }
+  .square:hover{
+    background-color: black;
+    color: rgb(0, 0, 245);
+  }
+  .insta-section:hover{
+    background-color: black;
+    color: rgb(255, 0, 85);
+  }
+  .github-section:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(133, 3, 255);
+  }
