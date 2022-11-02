@@ -1,0 +1,12 @@
+body{
+    background: url(/img/bgfor\ 1st\ section.jpg) ;
+}
+.border{
+    background-color: rgb(197, 245, 116);
+    border-color: black;
+}
+.list-group-item{
+    background-color: pink;
+    text-align: center;
+    border-color: black;
+}
