@@ -51,10 +51,16 @@
 
 /* Education Section */
 .education-container {
-    background: linear-gradient(45deg, #36b0e0, #007ea9);
+    background: linear-gradient(45deg, #258076, #007ea9);
     padding: 50px;
 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+}
+/* Work Experience Container */
+.workexperience-container {
+    background: linear-gradient(45deg, #a55d7a, #630d5f9c);
+    padding: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .text {
@@ -69,10 +75,21 @@
     transition: transform 0.3s ease-in-out;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .card:hover {
     transform: scale(1.05);
 }
+.wcard {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.wcard:hover {
+    transform: scale(1.05);
+}
+
+
 
 /* Project Section */
 .project-container {
