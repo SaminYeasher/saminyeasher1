@@ -223,15 +223,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: var(--space-8);
-  position: relative;
-}
-
-.nav-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: var(--space-8);
 }
 
 .nav-link {
@@ -269,38 +260,6 @@ body {
 
 .nav-link:focus {
   outline: var(--focus-outline);
-}
-
-/* Burger Menu Styles */
-.burger-menu {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  padding: var(--space-8);
-  z-index: 1001;
-  background: transparent;
-  border: none;
-}
-
-.burger-menu span {
-  width: 25px;
-  height: 3px;
-  background: var(--color-text);
-  margin: 3px 0;
-  transition: all 0.3s ease;
-  border-radius: 3px;
-}
-
-.burger-menu.active span:nth-child(1) {
-  transform: rotate(45deg) translate(8px, 8px);
-}
-
-.burger-menu.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.burger-menu.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
 }
 
 /* Hero Section */
@@ -926,46 +885,14 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* Mobile Navigation Styles */
-  .burger-menu {
-    display: flex;
-    position: absolute;
-    right: var(--space-24);
-  }
-
-  .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 65px;
-    flex-direction: column;
-    background: linear-gradient(180deg, rgba(255, 255, 253, 0.98) 0%, rgba(252, 252, 249, 0.95) 100%);
-    width: 100%;
-    text-align: center;
-    transition: left 0.3s ease;
-    box-shadow: 0 8px 32px rgba(33, 128, 141, 0.15);
-    padding: var(--space-24) 0;
-    backdrop-filter: blur(10px);
-    max-height: calc(100vh - 65px);
-    overflow-y: auto;
-  }
-
-  .nav-menu.active {
-    left: 0;
+  .nav-container {
+    padding: 0 var(--space-16);
+    gap: var(--space-4);
   }
 
   .nav-link {
-    padding: var(--space-16) var(--space-24);
-    font-size: var(--font-size-md);
-    width: 100%;
-    display: block;
-  }
-
-  .nav-link::after {
-    display: none;
-  }
-
-  .nav-link:hover {
-    background: var(--gradient-primary-light);
+    padding: var(--space-8) var(--space-12);
+    font-size: var(--font-size-xs);
   }
 
   .hero {
@@ -1028,13 +955,13 @@ body {
 }
 
 @media (max-width: 480px) {
-  .burger-menu {
-    right: var(--space-16);
+  .nav-container {
+    gap: 0;
   }
 
-  .nav-menu {
-    top: 57px;
-    max-height: calc(100vh - 57px);
+  .nav-link {
+    padding: var(--space-8) var(--space-8);
+    font-size: 10px;
   }
 
   .hero h1 {
